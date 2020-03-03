@@ -11,9 +11,10 @@ class Pessoa {
 const p1 = new Pessoa('João')
 p1.falar()
 
-function Pessoa2(nome){
+function Pessoa2(nome) {
+    this.nome = nome
     this.falar = function() {
-        return console.log(`Meu nome é ${nome}`)
+        return console.log(`Meu nome é ${this.nome}`)
     }
 }
 
